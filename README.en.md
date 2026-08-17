@@ -12,14 +12,8 @@
 Bottom-left of the sidebar (`sidebar.footer.action`, first cell — it pushes the
 "Cordis plugin" button and the settings button to the right):
 
-```
-┌────────────┐
-│  🔴 余额   │  ← red ring: account balance, full = ¥100, click to refresh
-│  🔵 剩余   │  ← blue ring: estimated remaining tokens, full = ¥100 worth of tokens
-└────────────┘
-  今日 5820万   ← today's usage bar; label above the bar, color auto-inverted
-  ▮▮▮▮▮▮▮▮    ← blue fill = today's tokens ÷ ¥100 token quota
-```
+<img width="85" height="136" alt="image" src="https://github.com/user-attachments/assets/9e0b24b9-7e9e-4464-8e0a-ea9b31b0f9e6" />
+
 
 - Hover any ring/bar for details (total/granted/topped-up, estimate basis, input/output/cache
   breakdown, call count).
