@@ -1,0 +1,6 @@
+# dsh-balance-floating bundle patch: one host row over the web profile.
+# The row name resolves from the profile's own node_modules where
+# `dsh plugin --profile web add <path>` installs this package.
+- insert:
+    - id: balance-floating
+      name: dsh-balance-floating

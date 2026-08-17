@@ -1,0 +1,65 @@
+{
+  "name": "dsh-balance-floating",
+  "version": "1.0.0",
+  "description": "DeepSeek 余额/用量悬浮窗插件:左下角红色血条(账户余额)+ 蓝色环(估算剩余 token)+ 今日消耗横条,数据基于 dsh-cost-meter。A floating balance & usage widget for the DeepSeek Harness web GUI: bottom-left red balance bar + estimated remaining-token ring + today's usage bar, powered by dsh-cost-meter.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./client": {
+      "default": "./lib/client.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  },
+  "dshhub": {
+    "schemaVersion": 1,
+    "displayName": "DeepSeek余额悬浮窗插件",
+    "summary": "左下角悬浮窗:余额血条、估算剩余 token 环、今日消耗横条。数据源:dsh-cost-meter。",
+    "categories": ["费用", "Web UI", "观测"],
+    "surfaces": ["web"],
+    "capabilities": {
+      "requires": ["service:cost-meter"]
+    },
+    "compatibility": {
+      "dsh": ">=0.1.0-rc.5",
+      "node": ">=20"
+    },
+    "permissions": {}
+  },
+  "files": [
+    "lib/index.js",
+    "lib/client.js",
+    "cordis.patch.yml",
+    "README.md",
+    "README.en.md",
+    "LICENSE"
+  ],
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yhPrime/deepseek-balance-floating.git"
+  },
+  "keywords": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "client-plugin",
+    "balance",
+    "usage",
+    "tokens",
+    "billing",
+    "widget"
+  ],
+  "license": "MIT"
+}
